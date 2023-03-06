@@ -1,0 +1,91 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+
+.left {
+  background-color: #292929;
+  padding: 20px;
+  position: static;
+}
+
+.left .top-left {
+  height: 50%;
+}
+
+.left .top-left button, .left .bottom-left button  {
+  font-size: 18px;
+  text-align: left;
+  margin: 5px;
+  color: aliceblue;
+  background-color: #292929;
+  
+  border-radius: 5px;
+}
+.left .top-left button  {
+  padding: 10px;
+  height: 40px;
+  width: 90%;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+}
+.left .bottom-left button {
+  height: 30px;
+  border: 0;
+  
+}
+.left button:hover,.left .bottom-left button:hover  {
+  background-color: #363636;
+}
+
+.left .bottom-left {
+  display: grid;
+  border-top:1px solid whitesmoke ;
+}
+
+.right {
+  background-color: rgba(52, 53, 65);
+  padding: 20px;
+}
+
+.right main {
+  height: 80%;
+}
+
+.right nav {
+  height: 10%;
+}
+
+.right footer {
+  height: 10%;
+  color: wheat;
+  font-size: 12px;
+  text-align: center;
+}
+
+.right nav input {
+  margin-left: 20%;
+  background-image: url(chatgpt.png);
+  background-size: 25px;
+  background-position: right center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  width: 60%;
+  padding: 15px 30px;
+  color: wheat;
+  height: 4vh;
+  border: 1px solid rgba(0, 0, 0, 0.192);
+  background-color: rgb(62, 62, 77);
+  border-radius: 5px;
+}
+
+.right nav input:focus {
+  outline: none;
+}
+
